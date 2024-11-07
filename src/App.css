@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+.customize {
+  position: relative;
+  left: 200px;
+  top: 100px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.log {
+  cursor: pointer;
+}
+
+.fonty {
+  font-family: "Dancing Script", cursive;
+}
+
+.move {
+  position: relative;
+  left: 250px;
+}
