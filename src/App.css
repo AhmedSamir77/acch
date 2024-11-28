@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 .customize {
   position: relative;
@@ -25,7 +25,6 @@ body {
   border: 3px solid rgb(224, 224, 224);
 }
 
-
 .log {
   cursor: pointer;
 }
@@ -44,14 +43,12 @@ body {
   cursor: pointer;
 } */
 
-.errorimg{
-height: 90vh;
+.errorimg {
+  height: 90vh;
   position: relative;
   right: 20px;
   top: 30px;
 }
-
-
 
 @keyframes fadeIn {
   from {
@@ -64,21 +61,21 @@ height: 90vh;
 
 @keyframes textGlow {
   0% {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 0px 0px 25px rgba(255, 255, 255, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2),
+      0px 0px 25px rgba(255, 255, 255, 0.3);
   }
   100% {
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4), 0px 0px 35px rgba(255, 255, 255, 0.6);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4),
+      0px 0px 35px rgba(255, 255, 255, 0.6);
   }
 }
-
-
 
 .upIcon {
   background-color: #007bff; /* Blue color */
   color: white;
   border: none;
   border-radius: 50%;
-  padding: 10px 15px;
+  padding: 1px 10px;
   font-size: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
