@@ -36,6 +36,7 @@ import {
   disableHoldType,
   GetContainers,
 } from "../../services/container";
+import ScrollToTopButton from "../../Components/ScrollToTopButton/ScrollToTopButton";
 
 const style = {
   position: "absolute",
@@ -98,6 +99,7 @@ export default function Containers() {
         newContainer.container_id,
         newContainer.hold
       );
+      toast.success("Holding Added To Container Successfully");
 
       // Assuming the API response contains the updated container data
       getContainers();
@@ -496,7 +498,7 @@ export default function Containers() {
                   <span className="ms-2">Hold Types</span>
                 </StyledTableCell>
                 <StyledTableCell>
-                  <span className="ms-2">Status</span> {/* New Column */}
+                  <span >Total Number of Holds</span> {/* New Column */}
                 </StyledTableCell>
                 <StyledTableCell>
                   <span className="ms-5">Date</span>
@@ -765,6 +767,15 @@ export default function Containers() {
       )}
 
       <Toaster position="top-center" reverseOrder={false} />
+
+      <ScrollToTopButton />
     </>
   );
 }
+
+
+
+
+
+
+
