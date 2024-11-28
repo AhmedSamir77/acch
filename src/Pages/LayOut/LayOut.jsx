@@ -8,7 +8,7 @@ import SideBar from "../../Components/SideBar/SideBar";
 export default function LayOut() {
   return (
     <>
-      <Navbar />
+     
       
       <Outlet></Outlet>
       <Footer />

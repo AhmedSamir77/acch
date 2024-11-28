@@ -16,6 +16,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { pink } from "@mui/material/colors";
 import { Link, useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
+import alexicon from "./../../assets/images/alexcont-icon.png";
 
 const pages = ["Products", "Pricing", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -25,7 +26,7 @@ export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const userToken = Cookies.get("userToken");
+  const userToken = Cookies.get("token");
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -43,17 +44,28 @@ export default function Navbar() {
   };
 
   function logOut() {
-    Cookies.remove("userToken");
+    Cookies.remove("token");
 
     navigate("/login");
-    window.location.reload();
+    // window.location.reload();
   }
 
   return (
     <AppBar position="fixed" color="info" sx={{ zIndex: 9999 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        
+          {/* Alexcont Logo */}
+          <Box sx={{ mr: 2, display: "flex", alignItems: "center" }}>
+            <img
+              src={alexicon}
+              alt="Alexcont Logo"
+              style={{
+                height: "60px",
+                width: "200px", // Adjust height as needed
+                marginRight: "10px", // Add some spacing from the text
+              }}
+            />
+          </Box>
 
           <Typography
             variant="h5"
@@ -70,14 +82,14 @@ export default function Navbar() {
               textDecoration: "none",
             }}
           >
-            Arkan Company
+            Dashboard
           </Typography>
           <Box
             style={{ justifyContent: "center" }}
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
           >
             <Typography class="fonty" variant="h4" color="black">
-             Alexandria Containers 🚢
+              Container Hold Management
             </Typography>
           </Box>
 

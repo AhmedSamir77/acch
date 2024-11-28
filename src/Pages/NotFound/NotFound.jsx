@@ -1,13 +1,13 @@
 import React from "react";
 import "./NotFound.module.css";
-import notfound from "./../../assets/images/error.svg";
+import notfound from "./../../assets/images/error-404c.jpg";
 import SideBar from "../../Components/SideBar/SideBar";
 
 export default function NotFound() {
   return (
     <>
-    <SideBar/>
-      <img src={notfound} className=" ms-5 ps-5 w-75" alt="" />
+    
+      <img src={notfound} className="errorimg ps-5 w-100" alt="" />
     </>
   );
 }
